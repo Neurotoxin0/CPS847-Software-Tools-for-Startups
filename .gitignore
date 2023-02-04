@@ -1,2 +1,3 @@
 slack_bot/auth.py
 slack_bot/.verysync/
+__pycache__/
