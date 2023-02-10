@@ -1,3 +1,4 @@
+'''Module provide slack bot support'''
 import logging, os, random
 from slack_bolt import App
 from auth import auth
@@ -17,20 +18,25 @@ app = App()
 
 
 # --------------------------------------------------
-"""
-@param user: user id
-@param channel: channel id
-@param client: slack client
-@param text: text of the message
-@param msg: the message in slack format
-"""
-
 def send_msg(client, msg):
+    '''
+    send message to given client with given msg
+    :param client: slack client
+    :param msg: response message
+    :return: none
+    '''
     response = client.chat_postMessage(**msg)
     logger.info(f"Send the message at {response['ts']}")
 
 
 def empty_msg(user, channel, client):
+    '''
+    empty incoming message
+    :param user: slack user id
+    :param channel: slack channel id
+    :param client: slack client
+    :return: none
+    '''
     response_list = \
     [
         f"<@{user}> Yes?",
@@ -60,6 +66,13 @@ def empty_msg(user, channel, client):
 
 
 def unknown_cmd(user, channel, client):
+    '''
+    unknown incoming command
+    :param user: slack user id
+    :param channel: slack channel id
+    :param client: slack client
+    :return: none
+    '''
     response_list = \
     [
         f"<@{user}> I do not know how to process your command, maybe try adding `echo`?",
@@ -88,6 +101,14 @@ def unknown_cmd(user, channel, client):
 
 
 def echo_cmd(user, channel, client, text):
+    '''
+    echo command
+    :param user: slack user id
+    :param channel: slack channel id
+    :param client: slack client
+    :param text: respond text
+    :return: none
+    '''
     #filter = re.compile("[^\u4e00-\u9fa5^a-z^A-Z^0-9]")
     #filtered = filter.sub(' ', text)
     filtered = text.strip("")
