@@ -1,6 +1,6 @@
 '''Module provide unit test functionality'''
 import unittest
-from python_cases.case1 import fizzbuzz
+from cases.case1 import fizzbuzz
 
 class TestMain(unittest.TestCase):
     """
