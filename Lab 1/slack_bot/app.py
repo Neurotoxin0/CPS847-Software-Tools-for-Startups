@@ -134,7 +134,7 @@ def message(event, client):
 
     if text.strip() == '':
         return empty_msg(user_id, channel_id, client)
-    if text and "echo" in text: 
+    if text and "echo" in text:
         return echo_cmd(user_id, channel_id, client, text.strip("echo "))
     return unknown_cmd(user_id, channel_id, client)
 
