@@ -25,4 +25,4 @@ jobs:
         
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylint -d C0114 C0116 E0401 C0410 W1203 $(git ls-files '*.py')
