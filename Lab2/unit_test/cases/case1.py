@@ -1,3 +1,5 @@
+'''Python program to print Fizz Buzz'''
+
 def fizzbuzz(number):
     """
     This function return specific string based on input number
