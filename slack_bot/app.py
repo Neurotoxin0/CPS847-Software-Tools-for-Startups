@@ -132,12 +132,9 @@ def message(event, client):
     user_id = event.get("user")
     text = event.get("text").replace('<@U04LBCW6FU7>', '')    # remove '@bot-itself'
 
-    if text.strip() == '': 
-        return empty_msg(user_id, channel_id, client)
-    if text and "echo" in text:
-        return echo_cmd(user_id, channel_id, client, text.strip("echo "))
-    else:
-        return unknown_cmd(user_id, channel_id, client)
+    if text.strip() == '':      return empty_msg(user_id, channel_id, client)
+    if text and "echo" in text: return echo_cmd(user_id, channel_id, client, text.strip("echo "))
+    return unknown_cmd(user_id, channel_id, client)
 
 
 
