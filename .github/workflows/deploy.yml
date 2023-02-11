@@ -1,0 +1,22 @@
+name: Deploy
+
+on:
+  push:
+    branches: [stage]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      uses: actions/checkout@v3
+
+    - name: Deploy to target
+      uses: appleboy/scp-action@master
+      with: |
+        host: ${{ sccrets.DEPLOY_HOST }}
+        port: ${{ sccrets.DEPLOY_PORT }}
+        username: ${{ sccrets.DEPLOY_USERNAME }}
+        password: ${{ sccrets.DEPLOY_PASSWORD }}
+        source: "./Lab2/index.html"
+        target: ${{ sccrets.DEPLOY_TARGET }}
