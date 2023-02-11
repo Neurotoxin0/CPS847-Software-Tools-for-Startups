@@ -6,7 +6,10 @@ on:
       - stage
 
 env:
-  TARGET_DIR: "/home/avm/courses/cps847/ddkim"
+  TARGET_DIR: "/home/avm/courses/cps847/<your_scs_id>"
+  SERVER_NAME: ${{ secrets.SERVER_NAME }}
+  USERNAME: ${{ secrets.USERNAME }}
+  PASSWORD: ${{ secrets.PASSWORD }}
 
 jobs:
   deploy:
@@ -18,4 +21,4 @@ jobs:
 
     - name: Deploy to target
       run: |
-        scp -r . avm@moon.scs.torontomu.ca:$TARGET_DIR
+        scp -r . $USERNAME@$SERVER_NAME:$TARGET_DIR
