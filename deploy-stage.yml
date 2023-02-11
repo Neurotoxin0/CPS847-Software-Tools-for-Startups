@@ -1,0 +1,21 @@
+name: Deploy to moon.scs.torontomu.ca
+
+on:
+  push:
+    branches:
+      - stage
+
+env:
+  TARGET_DIR: "/home/avm/courses/cps847/ddkim"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy to target
+      run: |
+        scp -r . avm@moon.scs.torontomu.ca:$TARGET_DIR
