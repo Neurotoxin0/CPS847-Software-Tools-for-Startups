@@ -1,3 +1,22 @@
 # CPS847-Software-Tools-for-Startups
-+ Code Archiving for course: CPS 847 - Software Tools for Startups
-+ Group 25
+
+----
+
+[1]: https://img.shields.io/badge/Slack-W23%20CPS%20847%20Group%2025-brightgreen
+[2]: https://join.slack.com/t/w23cps847group25/signup
+
+[![Slack][1]][2]
+[![codecov](https://codecov.io/gh/Neurotoxin0/CPS847-Software-Tools-for-Startups/branch/main/graph/badge.svg?token=8Y9HQHNPGM)](https://codecov.io/gh/Neurotoxin0/CPS847-Software-Tools-for-Startups)
+
+----
+
+# Group 25 Member Info
++ Don Xu
++ Kathy Yu
++ Iris Ma
++ Dennis Kim
+
+# Repo Rules
++ No direct access to main branch -> pull request is mandatory
++ All pull requests must be approved by another collaborator
++ It is recommended to merge after all checks are passed
