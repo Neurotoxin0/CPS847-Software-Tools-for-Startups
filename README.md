@@ -20,3 +20,11 @@
 + No direct access to main branch -> pull request is mandatory
 + All pull requests must be approved by another collaborator
 + It is recommended to merge after all checks are passed
+
+# A3 Info
++ Vue root folder: /Lab3/Vue/
++ Django root folder: /Lab3/Django DB/
++ Original SQL command: https://github.com/Neurotoxin0/CPS847-Software-Tools-for-Startups/blob/main/Lab3/Part2_SQL_Original.sql
++ Migration SQL command: https://github.com/Neurotoxin0/CPS847-Software-Tools-for-Startups/blob/main/Lab3/Part2_SQL_Migration.sql
++ URL to Vue app: 
++ URL to Django app: 
