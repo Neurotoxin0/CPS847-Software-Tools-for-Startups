@@ -1,5 +1,9 @@
+<script setup lang="ts">
+import Customer from '../components/Customer.vue'
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an customer page</h1>
-  </div>
+  <main>
+    <Customer />
+  </main>
 </template>

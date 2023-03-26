@@ -9,7 +9,13 @@
     
     <Suspense>
       <Weather />
-      <template #fallback>Loading...</template>
+      <template #fallback, class="loading_message" >Loading...</template>
     </Suspense>
   </div>
 </template>
+
+<style scoped>
+  .loading_message {
+    text-align: center;
+  }
+</style>

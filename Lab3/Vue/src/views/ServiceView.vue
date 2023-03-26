@@ -1,5 +1,9 @@
+<script setup lang="ts">
+import Service from '../components/Service.vue'
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an service page</h1>
-  </div>
+  <main>
+    <Service />
+  </main>
 </template>

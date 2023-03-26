@@ -4,7 +4,12 @@ import { format } from 'date-fns';
 
 <template>
   <div class="time">
-    <h1>Current Time: {{ format(new Date(), 'yyyy-mm-dd hh:mm:ss') }}</h1>
+    <h1>Current Time: {{ format(new Date(), 'yyyy-MM-dd HH:mm:ss') }}</h1>
   </div>
 </template>
 
+<style scoped>
+  .time {
+    text-align: center;
+  }
+</style>

@@ -13,3 +13,22 @@
   </header>
   <RouterView />
 </template>
+
+<style scoped>
+  header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: #ccc;
+  }
+</style>
