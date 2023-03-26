@@ -24,3 +24,9 @@ const getWeatherData = async () =>
     <h1>Weather in {{ data?.city }}: {{ data?.temp }} &#8451;</h1>
   </div>
 </template>
+
+<style scoped>
+  .weather {
+    text-align: center;
+  }
+</style>
