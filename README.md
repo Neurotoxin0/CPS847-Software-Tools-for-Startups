@@ -26,5 +26,5 @@
 + Django root folder: /Lab3/Django DB/
 + Original SQL command: https://github.com/Neurotoxin0/CPS847-Software-Tools-for-Startups/blob/main/Lab3/Part2_SQL_Original.sql
 + Migration SQL command: https://github.com/Neurotoxin0/CPS847-Software-Tools-for-Startups/blob/main/Lab3/Part2_SQL_Migration.sql
-+ URL to Vue app: 
-+ URL to Django app: 
++ URL to Vue app: http://192.168.59.149:5173
++ URL to Django app: http://192.168.59.149:5173
